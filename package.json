@@ -1,0 +1,20 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "PROD=true node index.js",
+    "postinstall": "cd ./client && yarn"
+  },
+  "engines": {
+    "node": "14.x"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "peer": "^0.6.1",
+    "socket.io": "^4.1.3"
+  }
+}
